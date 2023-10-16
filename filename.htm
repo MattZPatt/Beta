@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url('usa-flag.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #c8102e, white, #3c3b6e);
+            text-align: center;
+            padding: 30px 0;
+            font-size: 36px;
+            color: white;
+            position: relative;
+        }
+
+        .header-background {
+            background-image: url('header-image.jpg');
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 200px;
+            padding: 10px; /* Added padding to the dropdown content */
+            list-style: disc; /* Added bullet points */
+        }
+
+        .dropdown-content a {
+            display: block; /* Display each item as a block element */
+            color: white;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #c8102e;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-background"></div>
+        <h1>Empowering Veterans</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">About Us</a>
+                <div class="dropdown-content">
+                    <a href="#">Our Mission</a>
+                    <a href="#">How It Works</a>
+                    <a href="#">Contact</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h2>Accessible Funding</h2>
+        <p>Our website offers a user-friendly and efficient process for veterans to request funds for their business endeavors. By creating a streamlined online portal, we've removed the barriers that often hinder veterans from accessing the financial resources they need. With just a few clicks, veterans can submit their funding requests, making the application process straightforward and accessible.</p>
+
+        <h2>Supporting Veteran-Owned Businesses</h2>
+        <p>The benefits of our platform are multifaceted. By facilitating funding requests for veteran-owned businesses, we are nurturing entrepreneurship and innovation within the veteran community. This not only enhances their financial well-being but also contributes to economic growth and job creation in our society.</p>
+
+        <h2>Tailored Assistance</h2>
+        <p>Understanding the unique challenges veterans face when transitioning to civilian life, we offer tailored financial support, mentorship, and resources specifically designed to address their needs. We believe that investing in the dreams and aspirations of veterans not only honors their service but also enriches the fabric of our nation.</p>
+    </div>
+</body>
+</html>
